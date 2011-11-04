@@ -1,0 +1,20 @@
+#tag {
+   width: 120px; 
+   height: 26px; 
+   background: red;
+   position: relative;
+   -moz-border-radius:    3px; 
+   -webkit-border-radius: 3px; 
+   border-radius:         3px;
+   margin-left:100px;
+}
+#tag:before {
+   content:"";
+   position: absolute;
+   right: 98%;
+   width: 0;
+   height: 0;
+   border-top: 13px solid transparent;
+   border-right: 13px solid red;
+   border-bottom: 13px solid transparent;
+}

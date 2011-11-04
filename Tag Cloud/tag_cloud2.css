@@ -1,0 +1,67 @@
+.tag {  
+    float: left;  
+    margin: 5px;  
+    height: 28px;  /* Same as your image height */  
+    width: auto;  
+}  
+  
+.tag a{  
+    background: url("https://lh3.googleusercontent.com/yzLkd5DlOnZGyxmXcfxXmLWIVixG9LvRI2qWAcgxM8B7xM2uXKri8OPwWiNF6XUxt_srIt73BonffEhF9DW6XS82Q8evy0uBKyc=w1024") repeat-x scroll left top transparent;  
+    float: left;  
+    height: 28px;  
+    padding: 5px 6px;  
+    color: #0F2D39;  
+    font-size: 12px;  
+    text-decoration: none;  
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);  
+}  
+  
+.tag:before{  
+    content: '';  
+    background: url("https://lh4.googleusercontent.com/yNMWeNFTs9fRsg7H2Zb1diD863Yl8P79MzpacQVvvfqm66t-o-W0rBB6Yh62_K140edF6CuUPYIJfxEgfLFky7IeEdrTrrSaiuI=w1024") no-repeat scroll 0 0 transparent;  
+    display: block;  
+    float: left;  
+    height: 28px;  /* Same as your image height */  
+    width: 3px;  /* Same as your image width */
+}  
+  
+.tag:after{  
+    content: '';  
+    background: url("https://lh3.googleusercontent.com/--1p2PzLY3IbXghagBa56fW-RclgSlMFWDDPPJFzFgWJ3GAGstvo9pW8uIJ3_f4wJ26rE0_dA0LE7Fh3W5jqqodrEx5PaLSgGEg=w1024") no-repeat scroll 0 0 transparent;  
+    display: block;  
+    height: 28px;  /* Same as your image height */  
+    width: 14px;  /* Same as your image width */  
+    float: right;
+}  
+  
+/* Flip-tag Rules +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */  
+  
+.tag.flip:before{  
+    content: '';  
+    background: url("https://lh3.googleusercontent.com/--1p2PzLY3IbXghagBa56fW-RclgSlMFWDDPPJFzFgWJ3GAGstvo9pW8uIJ3_f4wJ26rE0_dA0LE7Fh3W5jqqodrEx5PaLSgGEg=w1024") no-repeat scroll left top transparent;  
+    display: block;  
+    float: left;  
+    height: 28px;  /* Same as your image height */  
+    width: 14px;  /* Same as your image width */ 
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}  
+  
+.tag.flip:after{  
+    content: '';  
+    background: url("https://lh4.googleusercontent.com/yNMWeNFTs9fRsg7H2Zb1diD863Yl8P79MzpacQVvvfqm66t-o-W0rBB6Yh62_K140edF6CuUPYIJfxEgfLFky7IeEdrTrrSaiuI=w1024") no-repeat scroll right top transparent;  
+    display: block;  
+    float: right;  
+    height: 28px;  /* Same as your image height */  
+    width: 3px;  /* Same as your image width */  
+     -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}

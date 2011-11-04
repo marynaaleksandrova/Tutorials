@@ -1,0 +1,62 @@
+/* Navigation links order*/
+.navigation{
+    margin:0 auto;
+    width:40%;
+    text-align:center;
+}
+.navigation li {  
+    list-style: none;  
+    display: block;  
+    float: left;
+    margin: 0 10px;
+}  
+.navigation li a {  
+    text-shadow: 0 2px 1px rgba(0,0,0,0.5);  
+    display: block;  
+    text-decoration: none;  
+    color: #f0f0f0;  
+}
+/*Creating ribbons*/
+.ribbon{    /*Main ribbon body*/
+    background-color: #FF5f00;
+    color: #F0F0F0;
+    font-size: 15px;
+    height: 20px;
+    padding: 15px 10px; /*height 20px plus 2 vertical paddings(30px) is 50px. Remember this(^1^)*/
+    text-align: center;
+    width: 770px;
+    position: relative;
+    margin: 100px auto 0;
+}
+.ribbon:before, .ribbon:after {/*Ribbon ends*/
+     content: "";
+     position: absolute;
+     display: block;
+     border: 25px solid #ff711d; /*Border = 25px, that means that full width is 50px and height is also 50px (go to ^1^)*/
+     top: 10px; /*Distance down from upper edge of ribbon's body. Remember this (^2^)*/
+     z-index: -1;
+}
+.ribbon:before{ /*Maiking ends being triangular*/
+    border-left-color:transparent;
+    left: -35px; /*Full length is 50px*, so shift for 35px gives us 15px overlap*/
+}
+.ribbon:after { /*Maiking ends being triangular*/
+    border-right-color:transparent;
+    right: -35px; /*Full length is 50px*, so shift for 35px gives us 15px overlap. Remember this ^3^*/
+}
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after{ /*Making those small overlap triangles*/
+    content: "";
+    position: absolute;
+    display: block;
+    border-style: solid;
+    border-color: #9f3b00 transparent transparent transparent;
+    bottom: -10px; /*Because of ^2^*/
+}
+.ribbon .ribbon-content:before{
+    border-width: 10px 0 0 15px; /*10px(height) is because of ^2^ and 15px(width) is because of ^3^*/
+    left: 0;
+}
+.ribbon .ribbon-content:after{
+    border-width: 10px 15px 0 0;
+    right: 0;
+}
