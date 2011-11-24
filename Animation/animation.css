@@ -1,0 +1,46 @@
+div {
+    width:5px;
+    height:5px;
+    background-color:black;
+    position:relative;
+    /*Firefox*/
+    -moz-animation-name: diagonal-slide;
+    -moz-animation-duration: 5s;
+    -moz-animation-iteration-count: 10;
+    /*Safari, Chrome*/
+    -webkit-animation-name: spins;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: 10;
+    /*future*/
+    animation-name: diagonal-slide;
+    animation-duration: 5s;
+    animation-iteration-count: 10;
+  }
+/*Firefox*/
+@-moz-keyframes diagonal-slide { 
+from {
+      left: 0;
+      top: 0;
+    }
+    to {
+      left: 100px;
+      top: 100px;
+    }
+}
+/*Chrome, Safari*/
+@-webkit-keyframes spins
+{
+  from { none; }
+  to { -webkit-transform: rotate(360deg); }
+}
+/*future*/
+@keyframes diagonal-slide {
+from {
+      left: 0;
+      top: 0;
+    }
+    to {
+      left: 100px;
+      top: 100px;
+}
+}

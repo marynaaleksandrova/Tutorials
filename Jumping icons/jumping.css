@@ -1,0 +1,9 @@
+.icon{
+    margin: 100px 20px 0;    
+}
+img.icon: after{
+    content:" ";
+    background: -moz-radial-gradient(center center , ellipse closest-side, rgba(0, 0, 0, 0.2) 0%, transparent 100%) repeat scroll 0 0 transparent;
+    height: 20px;
+    width: 60px;    
+}

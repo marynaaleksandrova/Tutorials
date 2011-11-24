@@ -1,0 +1,94 @@
+div{
+    width:10px;
+    height:10px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    margin:20px 10px 0 10px;
+    float:left;
+    /*Firefox*/
+    -moz-animation-name: garland;
+    -moz-animation-duration: 1000ms;
+    -moz-animation-iteration-count: infinite;
+    /*Safari, Chrome*/
+    -webkit-animation-name: garland;
+    -webkit-animation-duration: 1000ms;
+    -webkit-animation-iteration-count: infinite;
+    /*future*/
+    animation-name: garland;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+}
+.first{
+    background-color: maroon;
+    
+}
+.second{
+    background-color: green;
+    -moz-animation-delay: 200ms;
+    -webkit-animation-delay: 200ms;
+    animation-delay: 200ms;
+}
+.third{
+    background-color: blue;
+    -moz-box-shadow: 0 0 7px yellow;
+    -webkit-box-shadow: 0 0 7px yellow;
+    box-shadow: 0 0 7px yellow;
+    -moz-animation-delay: 400ms;
+    -webkit-animation-delay: 400ms;
+    animation-delay: 400ms;
+}
+.forth{
+    background-color: mediumvioletred;
+    -moz-animation-delay: 600ms;
+    -webkit-animation-delay: 600ms;
+    animation-delay: 600ms;
+}
+.fifth{
+    background-color: red;
+    -moz-animation-delay: 800ms;
+    -webkit-animation-delay: 800ms;
+    animation-delay: 800ms;
+}
+
+@-moz-keyframes garland { 
+    0%   {background-color: maroon;}
+    25%  {  background-color: green; 
+            -moz-box-shadow: 0 0 10px pink;
+            -webkit-box-shadow: 0 0 10px pink;
+            box-shadow: 0 0 10px pink;}
+    50%  {background-color: blue;}
+    75%  {  background-color: mediumvioletred;
+            -moz-box-shadow: 0 0 15px darkorange;
+            -webkit-box-shadow: 0 0 15px darkorange;
+            box-shadow: 0 0 15px darkorange;}
+    100% {background-color: red;}
+}
+/*Chrome, Safari*/
+@-webkit-keyframes garland {
+    0%   {background-color: maroon;}
+    25%  {  background-color: green;
+            -moz-box-shadow: 0 0 10px pink;
+            -webkit-box-shadow: 0 0 10px pink;
+            box-shadow: 0 0 10px pink;}
+    50%  {background-color: blue;}
+    75%  {  background-color: mediumvioletred;
+            -moz-box-shadow: 0 0 15px darkorange;
+            -webkit-box-shadow: 0 0 15px darkorange;
+            box-shadow: 0 0 15px darkorange;}
+    100% {background-color: red;}
+}
+/*future*/
+@keyframes garland {
+    0%   {background-color: maroon;}
+    25%  {  background-color: green;
+            -moz-box-shadow: 0 0 10px pink;
+            -webkit-box-shadow: 0 0 10px pink;
+            box-shadow: 0 0 10px pink;}
+    50%  {background-color: blue;}
+    75%  {  background-color: mediumvioletred;
+             -moz-box-shadow: 0 0 15px darkorange;
+            -webkit-box-shadow: 0 0 15px darkorange;
+            box-shadow: 0 0 15px darkorange;}
+    100% {background-color: red;}
+}

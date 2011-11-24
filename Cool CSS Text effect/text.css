@@ -1,0 +1,89 @@
+#container {
+    background-color:#272727;    
+}
+h1.title {
+    font-family: 'Marvel', sans-serif;
+    font-size: 7em;
+    color: #e4b405;
+    display: inline-block;
+    width: 100%;
+    text-shadow: 0px 0px 30px rgba(235,191,16,0),
+                 0px 0px 30px rgba(235,191,16,0),
+                 1px 1px 0px #f8f7e5,
+                 1px -1px 0px #fdce25;
+    margin-bottom: 1.7em;
+    overflow: hidden;
+}
+.title span {
+    zoom: 1;
+    display: inline-block;
+    z-index: 1;
+    position: absolute;
+}
+.title .char1 {left: .1em; padding-left: .05em;}
+ 
+.title .char2 {left: .62em; padding-left: .05em;}
+ 
+.title .char3 {left: 1.13em; padding-left: .05em;}
+ 
+.title .char4 {left: 1.7em; padding-left: .05em;}
+ 
+.title .char5 {left: 2.19em; padding-left: .05em;}
+ 
+.title .char6 {left: 2.71em; padding-left: .05em;}
+ 
+.title .char7 {left: 3.24em; padding-left: .05em;}
+ 
+.title .char8 {left: 3.77em; padding-left: .05em;}
+ 
+.title .char9 {left: 4.07em; padding-left: .05em;}
+ 
+.title .char10 {left: 4.57em; padding-left: .05em;}
+ 
+.title .char11 {left: 5.14em; padding-left: .05em;}
+ 
+.title .char12 {left: 5.9em; padding-left: .05em;}
+
+.char1:after {content: "C"; margin-left: -.478em;}
+ 
+.char2:after {content: "O"; margin-left: -.442em;}
+ 
+.char3:after {content: "N"; margin-left: -.49em;}
+ 
+.char4:after {content: "F"; margin-left: -.448em;}
+ 
+.char5:after {content: "E"; margin-left: -.448em;}
+
+.char6:after {content: "S"; margin-left: -.448em;}
+ 
+.char7:after {content: "S"; margin-left: -.448em;}
+ 
+.char8:after {content: "I"; margin-left: -.245em;}
+ 
+.char9:after {content: "O"; margin-left: -.447em;}
+ 
+.char10:after {content: "N"; margin-left: -.49em;}
+ 
+.char11:after {content: "S"; margin-left: -.448em;}
+ 
+.char12:after {content: "3"; margin-left: -.42em;}
+ 
+.char1:after, .char2:after, .char3:after, .char4:after, .char5:after, .char6:after, .char7:after, .char8:after, .char9:after,
+.char10:after, .char11:after, .char12:after {
+    color: #f8f7e5;
+    text-align: center;
+    position: absolute;
+    font-family: 'Marvel', sans-serif;
+    font-size: 105.6%;
+    text-transform: uppercase;
+    margin-top: .06em;
+    z-index: -1;
+    *display: inline;
+    -webkit-mask-image: url('../img/mask.png');
+    -moz-mask-image: url('../img/mask.png');
+    -o-mask-image: url('../img/mask.png');
+    -ms-mask-image: url('../img/mask.png');
+    mask-image: url('../img/mask.png');
+    text-shadow: 10px 5px 0px rgba(0,0,0,0.4);
+    padding-right: .1em;
+}

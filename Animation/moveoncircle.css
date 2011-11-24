@@ -1,0 +1,70 @@
+.object{
+    width:10px;
+    height:10px;
+    background-color:black;
+    position:relative;
+    margin: 100px 100px;
+    /*Firefox*/
+    -moz-animation-name: move-circle;
+    -moz-animation-duration: 12s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-out;
+     /*Webkit*/
+    -webkit-animation-name: move-horizontal;
+    -webkit-animation-duration: 12s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-direction: alternate;
+    /*future*/
+    animation-name: move-horizontal;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+.trajectory{
+    position:relative;    
+    -webkit-animation-name: move-vertical;
+    -webkit-animation-duration: 24s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes move-circle{ 
+    0%  {top:100px; left:350px;}
+    10% {top:105px; left:500px;}
+    17% {top:150px; left:550px;}
+    25% {top:250px; left:600px;}
+    32% {top:350px; left:550px;}
+    40% {top:395px; left:500px;}
+    50% {top:400px; left:350px;}
+    60% {top:395px; left:200px;}
+    67% {top:350px; left:150px;}
+    75% {top:250px; left:100px;}
+    83% {top:150px; left:150px;}
+    90% {top:105px; left:200px;}
+    100%{top:100px; left:350px;}
+}
+@-webkit-keyframes move-horizontal{
+    0%  {top:250px; left:100px;}
+    100%{top:250px; left:600px;}
+}
+@-webkit-keyframes move-vertical{ 
+    0%  {top:100px; left:350px;}
+    10% {top:105px; left:500px;}
+    17% {top:150px; left:550px;}
+    25% {top:250px; left:600px;}
+    32% {top:350px; left:550px;}
+    40% {top:395px; left:500px;}
+    50% {top:400px; left:350px;}
+    60% {top:395px; left:200px;}
+    67% {top:350px; left:150px;}
+    75% {top:250px; left:100px;}
+    83% {top:150px; left:150px;}
+    90% {top:105px; left:200px;}
+    100%{top:100px; left:350px;}
+}
+@keyframes move-horizontal{ 
+    0%   {none;}
+    100% {transform:translateX(500px);}
+}
